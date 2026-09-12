@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AuricVista | AI Travel Recommendations</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-symbol">AV</div>
+
+            <div class="brand-name">
+                AURICVISTA
+            </div>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#">Home</a>
+            <a href="#recommend">AI Recommendations</a>
+            <a href="#history-section">History</a>
+
+        </div>
+
+        <div class="mission-btn">
+            Our Mission <span>→</span>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                AURICVISTA AI • PERSONALIZED TRAVEL
+            </p>
+
+            <h1>
+                Your Journey.<br>
+                <span>Personally Curated.</span>
+            </h1>
+
+            <p class="hero-description">
+                Tell AuricVista what you're looking for.
+                Our AI thoughtfully matches your preferences
+                with travel experiences designed around you.
+            </p>
+
+            <a href="#recommend" class="hero-button">
+                Begin Your Journey
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <!-- AI ORBIT VISUAL -->
+
+        <div class="ai-visual">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="ai-core">
+
+                <div class="core-symbol">✦</div>
+
+                <p>AURIC</p>
+                <span>AI</span>
+
+            </div>
+
+            <div class="orbit-node node-one">
+                <span>✦</span>
+                <small>STAY</small>
+            </div>
+
+            <div class="orbit-node node-two">
+                <span>⌁</span>
+                <small>TOURISM</small>
+            </div>
+
+            <div class="orbit-node node-three">
+                <span>♡</span>
+                <small>SAFETY</small>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- RECOMMENDATION FORM -->
+
+    <main>
+
+        <section id="recommend" class="recommend-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    CURATE YOUR EXPERIENCE
+                </p>
+
+                <h2>
+                    Tell us what <span>matters to you.</span>
+                </h2>
+
+                <p>
+                    Your preferences help our AI create recommendations
+                    that feel made for you.
+                </p>
+
+            </div>
+
+
+            <section class="form-card">
+
+                <form id="recommendationForm">
+
+                    <div class="field">
+
+                        <label for="destination">
+                            Destination
+                        </label>
+
+                        <input
+                            id="destination"
+                            type="text"
+                            placeholder="Where are you going?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="budget">
+                            Budget
+                        </label>
+
+                        <select id="budget" required>
+
+                            <option value="">
+                                Select your budget
+                            </option>
+
+                            <option>
+                                Under ₹2,000
+                            </option>
+
+                            <option>
+                                ₹2,000 - ₹5,000
+                            </option>
+
+                            <option>
+                                ₹5,000 - ₹10,000
+                            </option>
+
+                            <option>
+                                ₹10,000+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="duration">
+                            Trip Duration
+                        </label>
+
+                        <select id="duration" required>
+
+                            <option value="">
+                                How long?
+                            </option>
+
+                            <option>
+                                1 day
+                            </option>
+
+                            <option>
+                                2-3 days
+                            </option>
+
+                            <option>
+                                4-7 days
+                            </option>
+
+                            <option>
+                                More than a week
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="stayType">
+                            Preferred Stay
+                        </label>
+
+                        <select id="stayType" required>
+
+                            <option value="">
+                                Choose your stay
+                            </option>
+
+                            <option>
+                                Hostel
+                            </option>
+
+                            <option>
+                                PG
+                            </option>
+
+                            <option>
+                                Budget hotel
+                            </option>
+
+                            <option>
+                                Homestay
+                            </option>
+
+                            <option>
+                                Any
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field field-wide">
+
+                        <label for="interests">
+                            Your Interests
+                        </label>
+
+                        <input
+                            id="interests"
+                            type="text"
+                            placeholder="Beaches, nature, local food, photography..."
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="safety">
+                            Safety Priority
+                        </label>
+
+                        <select id="safety" required>
+
+                            <option value="">
+                                Select priority
+                            </option>
+
+                            <option>
+                                Very important
+                            </option>
+
+                            <option>
+                                Important
+                            </option>
+
+                            <option>
+                                Normal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="food">
+                            Food Preference
+                        </label>
+
+                        <select id="food" required>
+
+                            <option value="">
+                                Select preference
+                            </option>
+
+                            <option>
+                                Vegetarian
+                            </option>
+
+                            <option>
+                                Non-vegetarian
+                            </option>
+
+                            <option>
+                                Both
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="transport">
+                            Transport
+                        </label>
+
+                        <select id="transport" required>
+
+                            <option value="">
+                                Select transport
+                            </option>
+
+                            <option>
+                                Public transport
+                            </option>
+
+                            <option>
+                                Cab
+                            </option>
+
+                            <option>
+                                Rental
+                            </option>
+
+                            <option>
+                                Any
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="generate-button"
+                    >
+
+                        <span>✦</span>
+                        Curate My Journey
+                        <span>→</span>
+
+                    </button>
+
+                </form>
+
+                <div class="form-note">
+
+                    <span>✦</span>
+                    AI-powered • Personalized • Built for you
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- LOADING -->
+
+        <section id="loading" class="loading hidden">
+
+            <div class="ai-loader">
+
+                <div class="loader-ring"></div>
+
+                <div class="loader-core">
+                    ✦
+                </div>
+
+            </div>
+
+            <p class="loading-title">
+                Curating your journey...
+            </p>
+
+            <p class="loading-subtitle">
+                AuricVista AI is analyzing your preferences
+            </p>
+
+        </section>
+
+
+        <!-- RESULTS -->
+
+        <section id="results"></section>
+
+
+        <!-- HISTORY -->
+
+        <section
+            id="history-section"
+            class="history-section"
+        >
+
+            <div class="section-heading history-heading">
+
+                <p class="eyebrow">
+                    YOUR AURICVISTA JOURNEYS
+                </p>
+
+                <h2>
+                    Recommendation <span>History.</span>
+                </h2>
+
+                <p>
+                    Revisit the journeys you've curated with AuricVista AI.
+                </p>
+
+            </div>
+
+
+            <button
+                id="historyBtn"
+                class="history-button"
+            >
+
+                View Previous Recommendations
+                <span>→</span>
+
+            </button>
+
+
+            <div id="history"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <div class="brand-symbol">AV</div>
+
+            <strong>AURICVISTA</strong>
+
+        </div>
+
+        <p>
+            One ecosystem. Infinite possibilities.
+        </p>
+
+        <span>
+            AI Travel Recommendation Engine
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
